@@ -42,6 +42,11 @@ Broadcasts significa um termo usado quando a comunicação é feita para todos o
    - Pegamos o endereço de rede e recortamos os 0’s (originais da máscara) e colocamos 255 no lugar, teremos então: 135.44.255.255
 
   - Dessa forma, por exemplo o endereço IP: 135.44.0.255 é válido por que é maior que o endereço de rede (135.44.0.0) e menor que o de broadcast (135.44.255.255).
-- Endereços Reservados para classe C 
+
+- Endereços Reservados para classe C
+  - Descobrir endereço de rede que esse endereço IP está inserido:
+    - Se recortarmos o 255 da máscara de rede e inserirmos os octetos correspondentes do endereço IP, teremos: 193.168.0.0
+  - Descobrir o endereço de broadcast da rede:
+    - Pegamos o endereço de rede e recortamos os 0’s (originais da máscara) e colocamos 255 no lugar, teremos então: 193.168.0.255
 
  
