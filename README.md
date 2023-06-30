@@ -5,6 +5,9 @@
 
 - A classe A:
   - Com o intervalo de octeto de 1 - 126 e a máscara de rede é 255.0.0.0.
+
+- O endereço 127.0.0.1 seria uma faixa de endereço IP reservada, esse seria um endereço interno da placa de rede para realizar testes e verificar se ela está de fato validando os protocolos TCP/IP.
+
 - A classe B:
   -  Com o intervalo de octeto de 128 - 191 e a máscara de rede é 255.255.0.0.
 - A classe C:
