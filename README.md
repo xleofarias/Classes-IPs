@@ -25,4 +25,23 @@
 
 - O roteador faz a tradução do endereço que aparece no Prompt para o que vemos em um site que fala nosso ip. Isto é feito por meio do método NAT (Network Address Translation), em que é feita a tradução de um endereço privado para o público.
 
+# Endereços Broadcasts:
+
+Broadcasts significa um termo usado quando a comunicação é feita para todos os dispositivos que estão na mesma rede.
+
+- Endereços Reservados para classe A
+  - Descobrir endereço de rede que esse endereço IP está inserido:
+    - Se recortarmos o 255 da máscara de rede e inserirmos o octeto correspondente do endereço IP, teremos: 7.0.0.0.
+  - Descobrir o endereço de broadcast da rede:
+    - Pegamos o endereço de rede e recortamos os 0’s (originais da máscara) e colocamos 255 no lugar, teremos então: 7.255.255.255
+  - Dessa forma, por exemplo o endereço IP: 7.0.0.255 é válido porque é maior que o endereço de rede (7.0.0.0) e menor que o de broadcast (7.255.255.255)
+- Endereços Reservados para classe B
+  - Descobrir endereço de rede que esse endereço IP está inserido:
+    - Se recortarmos o 255 da máscara de rede e inserirmos os octetos correspondentes do endereço IP, teremos: 135.44.0.0 :)
+  - Descobrir o endereço de broadcast da rede:
+   - Pegamos o endereço de rede e recortamos os 0’s (originais da máscara) e colocamos 255 no lugar, teremos então: 135.44.255.255
+
+  - Dessa forma, por exemplo o endereço IP: 135.44.0.255 é válido por que é maior que o endereço de rede (135.44.0.0) e menor que o de broadcast (135.44.255.255).
+- Endereços Reservados para classe C 
+
  
